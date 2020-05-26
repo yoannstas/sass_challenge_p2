@@ -1,0 +1,101 @@
+$padding: 16px;
+
+@mixin box_shadow {
+  -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+  box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+}
+
+$colors: (
+        "blue": #003bff,
+        "black": #000,
+        "grey": #666,
+        "silver": rgba(252, 252, 252, 0.87),
+);
+
+nav {
+  font: 100% "Space Mono", monospace;
+  text-align: center;
+  color: white;
+  background-color: lawngreen;
+}
+article {
+  display: flex;
+  flex-wrap: wrap;
+
+  section {
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px solid map_get($colors, "silver");
+    @include box_shadow;
+    padding: $padding;
+    margin: $padding;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+
+  #selling-points {
+    flex-grow: 2;
+    flex-basis: 100%
+  }
+}
+
+article code {
+  border: 1px solid #ddd;
+  color: map_get($colors, "silver");
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: $padding;
+  display: block;
+  word-wrap: break-word
+}
+
+article code.before {
+  float: left;
+  width: 40%
+}
+
+article code.after {
+  float: right;
+  width: 40%
+}
+
+h1 {
+  text-align: center
+}
+
+h6 {
+  text-align: center;
+  font-size: 2em;
+  padding: $padding * 2;
+  margin-bottom: 0px
+}
+
+%success {
+  border: 1px solid map_get($colors, "silver");
+  padding: $padding;
+  color: #2748B3;
+  width: 100%
+}
+
+.success {
+  @extend %success;
+  background-color: lawngreen;
+}
+
+.error {
+  @extend %success;
+  background-color: red;
+
+}
+
+.warning {
+  @extend %success;
+  background-color: #ff6f00;
+}

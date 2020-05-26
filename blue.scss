@@ -1,0 +1,20 @@
+$padding: 16px;
+
+body {
+  font: 100% "Space Mono", monospace;
+  color: #003bff;
+  margin: 0px;
+  padding: $padding;
+  background-image: url("img/eyes.jpg");
+}
+
+article code {
+  background: #35a1b4;
+}
+
+h1,
+h2,
+h6 {
+  color: #7cffef; }
+
+@import '_body';

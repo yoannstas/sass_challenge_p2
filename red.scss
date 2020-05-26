@@ -1,0 +1,21 @@
+$padding: 16px;
+$text: #FFFFFFFF;
+
+body {
+  font: 100% "Space Mono", monospace;
+  color: $text;
+  margin: 0px;
+  padding: $padding;
+  background-image: url("img/flowers.jpg");
+ }
+
+article code {
+  background: #b43535;
+}
+
+h1,
+h2,
+h6 {
+  color: $text; }
+
+@import '_body';

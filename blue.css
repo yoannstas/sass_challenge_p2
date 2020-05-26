@@ -1,0 +1,87 @@
+body {
+  font: 100% "Space Mono", monospace;
+  color: #003bff;
+  margin: 0px;
+  padding: 16px;
+  background-image: url("img/eyes.jpg"); }
+
+article code {
+  background: #35a1b4; }
+
+h1,
+h2,
+h6 {
+  color: #7cffef; }
+
+nav {
+  font: 100% "Space Mono", monospace;
+  text-align: center;
+  color: white;
+  background-color: lawngreen; }
+
+article {
+  display: flex;
+  flex-wrap: wrap; }
+  article section {
+    flex-grow: 1;
+    flex-basis: 45%;
+    border: 1px solid rgba(252, 252, 252, 0.87);
+    -webkit-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    box-shadow: 10px 10px 19px -4px rgba(255, 255, 255, 0.75);
+    padding: 16px;
+    margin: 16px;
+    clear: both;
+    overflow: auto;
+    box-sizing: border-box; }
+  article #selling-points {
+    flex-grow: 2;
+    flex-basis: 100%; }
+
+article code {
+  border: 1px solid #ddd;
+  color: rgba(252, 252, 252, 0.87);
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 16px;
+  display: block;
+  word-wrap: break-word; }
+
+article code.before {
+  float: left;
+  width: 40%; }
+
+article code.after {
+  float: right;
+  width: 40%; }
+
+h1 {
+  text-align: center; }
+
+h6 {
+  text-align: center;
+  font-size: 2em;
+  padding: 32px;
+  margin-bottom: 0px; }
+
+.success, .error, .warning {
+  border: 1px solid rgba(252, 252, 252, 0.87);
+  padding: 16px;
+  color: #2748B3;
+  width: 100%; }
+
+.success {
+  background-color: lawngreen; }
+
+.error {
+  background-color: red; }
+
+.warning {
+  background-color: #ff6f00; }
+
+/*# sourceMappingURL=blue.css.map */
